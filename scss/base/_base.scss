@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/typography' as *;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    padding: 0 5rem;
+    background-color: $color-accent;
+    max-width: $max-width;
+}

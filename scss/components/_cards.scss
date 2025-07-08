@@ -1,0 +1,72 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+@use '../base/typography' as *;
+
+
+.destinations {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.destination-card {
+    flex-direction: column;
+    width: 30%;
+    background-color: $color-white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: $shadow;
+    border-left: 5px solid $color-highlight;
+    &:hover {
+        transform: translateY(-0.5rem);
+    }
+    &__image {
+        width: 100%;
+        border-radius: 5px;
+    }
+    &__content {
+        font-family: $font-text;
+        & a {
+            text-decoration: none;
+            color:$color-dark;
+            font-style: italic;
+            float: right;
+            font-size: 0.9rem;
+            &:hover {
+                color: $color-primary;
+                text-decoration:underline;
+            }
+        }
+    }
+    &__desc {
+        text-align: justify;
+    }
+    &__meta {
+        display: flex;
+        flex-direction: column;
+        text-align:right;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .destinations {
+        flex-direction: column;
+        width: 100%;
+        max-width:600px;
+        padding: 1rem;
+    }
+    .destination-card {
+        width: 100%;
+        &__image {
+        height: 200px;
+        object-fit: cover;
+    }}
+}
+

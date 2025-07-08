@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+@use '../base/typography' as *;
+
+footer {
+    @include flex-center;
+    flex-direction: row;
+    background: $color-secondary;
+    color: $color-white;
+    justify-content: space-between;
+    bottom: 0;
+    padding: 0.5rem 2rem;
+}
+.footer{
+    &__redes {
+        flex-direction: row;
+
+        & a {
+            text-decoration: none;
+        }
+        &--link1 img{
+            width: 50px;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__text {
+        font-size: 0.8rem;
+    }
+}
+
+

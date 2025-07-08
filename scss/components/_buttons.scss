@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+@use '../base/typography' as *;
+
+
+button {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: $color-white;
+    background: $color-secondary;
+    font-family: $font-title;
+    margin: 1rem;
+    box-shadow: $shadow;
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(1.1);
+}

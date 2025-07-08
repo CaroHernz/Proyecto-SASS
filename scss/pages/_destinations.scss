@@ -1,0 +1,173 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+@use '../base/typography' as *;
+
+.destination-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+  display: none;
+  background-color: $color-white;
+  }
+  .destination-filters {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  .destination-hero {
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  
+    &__content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+    }
+  
+    &__title {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+  
+    &__subtitle {
+      font-size: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+  }
+  
+  .destination-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    padding: 0.5rem 2rem;
+  
+    &__overview {
+      padding-right: 2rem;
+    }
+  
+    &__title {
+      color: $color-dark;
+      font-family: $font-title;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+  
+    &__description {
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .highlight-card {
+    background: $color-light;
+    padding: 0.5rem 1.5rem;
+    border-radius: $border-radius;
+    margin-bottom: 1.5rem;
+  
+    i {
+      color: $color-primary;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+  
+    h3 {
+      color: $color-dark;
+      margin-bottom: 1rem;
+    }
+  
+    ul {
+      list-style-type: none;
+    }
+  
+    li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+  }
+  
+  .package-card {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: $border-radius;
+    padding: 1.5rem;
+    position: sticky;
+    top: 2rem;
+  
+    &__title {
+      color: $color-dark;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    &__duration {
+      color: $color-secondary;
+      margin-bottom: 1rem;
+    }
+  
+    &__features {
+      margin: 1.5rem 0;
+      padding-left: 1rem;
+  
+      li {
+        padding: 0.5rem 0;
+        position: relative;
+        list-style-type: none;
+  
+        &::before {
+          content: "✓";
+          color: $color-primary;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  
+    &__price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $color-primary;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+  }
+  
+  .destination-gallery {
+    padding: 1rem 2rem;
+    background: $color-light;
+  
+    &__title {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: $color-dark;
+      font-family: $font-title;
+      font-size: 2rem;
+    }
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: $border-radius;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }

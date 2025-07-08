@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/colors' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+@use '../base/typography' as *;
+
+.hero {
+    width: 100%;
+    padding: 2rem;
+    @include flex-center;
+    flex-direction: row;
+
+    &__image-container {
+        width: 40%;
+    }
+    &__image {
+        width: 100%;
+        border-radius: 50%;
+    }
+    &__title {
+        width: 60%;
+        font-family: $font-title;
+        font-size: 5rem;
+        font-weight: bold;
+        padding: 1rem;
+        align-items: center;
+        text-align: end;
+        text-shadow: $shadow;
+        
+        &--a {
+            color: $color-secondary;
+        }
+        &--b {
+            color: $color-primary;
+            font-size: 5.5rem;
+        }
+        &--c {
+            color: $color-white;
+            font-style: italic;
+            font-size: 6rem;
+        }
+        & p {
+            font-family: $font-text;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color:$color-dark;
+            background: $color-highlight;
+            border-radius: $border-radius;
+            text-align: end;
+            padding: 0.1rem 1.5rem;
+            font-style: italic;
+            text-shadow: none;
+        }
+    }
+}
