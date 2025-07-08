@@ -6,6 +6,7 @@
 
 .hero {
     width: 100%;
+    max-width: 1000px;
     padding: 2rem;
     @include flex-center;
     flex-direction: row;

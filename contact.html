@@ -34,7 +34,52 @@
                 <p>Descubre el Mundo Ahora</p>
             </div>
         </section>
-        
+        <section class="contact-section">
+            <div class="contact-container">
+              <h2 class="contact-title">Contáctanos</h2>
+              <p class="contact-subtitle">¿Tienes dudas sobre nuestros destinos? Escríbenos y te responderemos pronto.</p>
+              
+              <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                  <label for="name" class="form-label">Nombre completo</label>
+                  <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="phone" class="form-label">Teléfono (opcional)</label>
+                  <input type="tel" id="phone" name="phone" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                  <label for="destination" class="form-label">Destino de interés</label>
+                  <select id="destination" name="destination" class="form-select">
+                    <option value="">Selecciona un destino</option>
+                    <option value="new-york">Nueva York</option>
+                    <option value="tokyo">Tokio</option>
+                    <option value="london">Londres</option>
+                    <option value="other">Otro destino</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="message" class="form-label">Tu mensaje</label>
+                  <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group form-checkbox">
+                  <input type="checkbox" id="newsletter" name="newsletter" checked>
+                  <label for="newsletter">Deseo recibir ofertas y novedades por correo</label>
+                </div>
+                
+                <button type="submit" class="form-submit">Enviar consulta</button>
+              </form>
+            </div>
+          </section>
     </main>
     <footer>
         <div class="footer__redes">

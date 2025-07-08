@@ -11,5 +11,6 @@ body {
 main {
     padding: 0 5rem;
     background-color: $color-accent;
-    max-width: $max-width;
+    @include flex-center;
+    flex-direction: column;
 }
