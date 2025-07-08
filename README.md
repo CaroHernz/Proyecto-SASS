@@ -1,5 +1,5 @@
 <h1 align=center> Proyecto SASS </h1>
-<image src="" alt= "Viaja Ya!">
+<image src="assets/images/travel.png" alt= "Viaja Ya!">
 <p>Este repositorio contiene una interfaz web sencilla con temática de viajes, donde se ha organizado de manera modular utilizando SASS como preprocesador CSS, siguiendo el patrón de organización de carpetas 7-1 para una estructura escalable y mantenible.</p>
 
 ## Requerimientos del Proyecto
@@ -10,7 +10,7 @@
 
 ## Estructura del Proyecto
 ```
-M3 ABP3/
+Proyecto SASS/
 ├── assets/
 │   ├── css/
 │   │   ├── style.css
@@ -80,16 +80,16 @@ M3 ABP3/
 7. vendors/: Librerías externas
 
 ## ✨ Características Implementadas (✅)
-    - ✅ Estructura HTML semántica
-    - ✅ Diseño modular con componentes reutilizables
-    - ✅ Variables SASS para colores, tipografía y espaciado
-    -  Mixins para media queries y efectos
-    -  Reset CSS personalizado
-    - ✅ Tipografía escalable
-    - ✅ Componentes de botones y tarjetas
-    - ✅ Header y Footer estilizados
-    - ✅ Diseño responsivo
 
+- Estructura HTML semántica ✅ 
+- Diseño modular con componentes reutilizables ✅ 
+- Variables SASS para colores, tipografía y espaciado ✅ 
+- Mixins para media queries y efectos
+- Reset CSS personalizado
+- Tipografía escalable ✅ 
+- Componentes de botones y tarjetas ✅ 
+- Header y Footer estilizados ✅ 
+- Diseño responsivo ✅ 
 
 ### Responsable:
 <p align=center>Carolina Hernández Barra</p>
