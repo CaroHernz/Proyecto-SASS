@@ -53,6 +53,29 @@ main {
   flex-direction: column;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
 .navbar {
   display: flex;
   position: sticky;
@@ -518,6 +541,28 @@ button:hover {
 }
 .gallery-grid img:hover {
   transform: scale(1.03);
+}
+
+.info-container {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+.info-container p {
+  color: #2c3e50;
+}
+.info-container li {
+  color: #2c3e50;
+}
+
+.news-container {
+  background-color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0rem 5rem;
+  color: #e74c3c;
+  border-radius: 30px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
