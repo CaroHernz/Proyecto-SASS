@@ -47,7 +47,10 @@ body {
 main {
   padding: 0 5rem;
   background-color: #e74c3c;
-  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .navbar {
@@ -59,7 +62,6 @@ main {
   background-color: #e74c3c;
   font-family: "Tahoma", sans-serif;
   font-size: 1rem;
-  width: 100%;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 .navbar__logo {
@@ -99,6 +101,7 @@ main {
 
 .hero {
   width: 100%;
+  max-width: 1000px;
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -256,8 +259,118 @@ button:hover {
     object-fit: cover;
   }
 }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #2ecc71;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #ffff5a;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+}
+.form-checkbox input {
+  width: 18px;
+  height: 18px;
+}
+.form-checkbox label {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.form-submit {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+.form-submit:hover {
+  background-color: #e74c3c;
+}
+
+.contact-section {
+  padding: 4rem 1rem;
+  background-color: #2c3e50;
+  background-image: url("/assets/images/logo.jpeg");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+.contact-section .contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+.contact-section .contact-title {
+  color: #e74c3c;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+.contact-section .contact-subtitle {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+  .contact-section .contact-container {
+    padding: 1.5rem;
+  }
+  .contact-form {
+    gap: 1.2rem;
+  }
+}
 .destination-detail {
-  max-width: 1200px;
   margin: 0 auto;
   display: none;
   background-color: white;
@@ -270,7 +383,7 @@ button:hover {
 }
 
 .destination-hero {
-  height: 50%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   display: flex;

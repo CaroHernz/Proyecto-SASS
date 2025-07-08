@@ -5,8 +5,7 @@
 @use '../base/typography' as *;
 
 .destination-detail {
-    max-width: 1200px;
-    margin: 0 auto;
+  margin: 0 auto;
   display: none;
   background-color: $color-white;
   }
@@ -16,7 +15,7 @@
     gap: 10px;
   }
   .destination-hero {
-    height: 50%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     display: flex;

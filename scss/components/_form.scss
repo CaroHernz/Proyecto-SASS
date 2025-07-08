@@ -3,3 +3,71 @@
 @use '../abstracts/mixins' as *;
 @use '../base/base' as *;
 @use '../base/typography' as *;
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+  
+.form-label {
+    font-weight: 600;
+    color: $color-dark;
+    font-size: 0.95rem;
+  }
+  
+  .form-input, 
+  .form-select, 
+  .form-textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid $color-secondary;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    
+    &:focus {
+      outline: none;
+      border-color: $color-highlight;
+      box-shadow: $shadow;
+    }
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .form-checkbox {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    
+    input {
+      width: 18px;
+      height: 18px;
+    }
+    
+    label {
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+  }
+  
+  .form-submit {
+    background-color: $color-secondary;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    
+    &:hover {
+      background-color: $color-accent;
+    }
+  }
