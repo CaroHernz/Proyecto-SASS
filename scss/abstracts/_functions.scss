@@ -1,0 +1,5 @@
+@use '../abstracts/variables' as *;
+
+@function percentage($width, $max-width) {
+    @return math.div($width, $max-width) * 100%;
+  }
