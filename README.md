@@ -1,6 +1,6 @@
 <h1 align=center> Proyecto SASS </h1>
-<image src="assets/images/travel.png" alt= "Viaja Ya!">
-<p>Este repositorio contiene una interfaz web sencilla con temática de viajes, donde se ha organizado de manera modular utilizando SASS como preprocesador CSS, siguiendo el patrón de organización de carpetas 7-1 para una estructura escalable y mantenible.</p>
+<p align=center><image src="assets/images/travel.png" alt= "Viaja Ya!" width="200px" height="auto"></p>
+<p align=center>Este repositorio contiene una interfaz web sencilla con temática de viajes, donde se ha organizado de manera modular utilizando SASS como preprocesador CSS, siguiendo el patrón de organización de carpetas 7-1 para una estructura escalable y mantenible.</p>
 
 ## Requerimientos del Proyecto
 - Node.js
