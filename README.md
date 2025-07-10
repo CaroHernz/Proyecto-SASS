@@ -25,13 +25,13 @@ Proyecto SASS/
 │   │   ├── _functions.scss
 │   │   └── _colors.scss
 │   ├── base/
-│   │   ├── base.scss
+│   │   ├── _base.scss
 │   │   ├── _reset.scss
 │   │   └── _typography.scss
 │   ├── components/
 │   │   ├── _buttons.scss
 │   │   ├── _cards.scss
-│   │   └── form.scss
+│   │   └── _form.scss
 │   ├── layout/
 │   │   ├── _header.scss
 │   │   ├── _hero.scss
@@ -43,7 +43,6 @@ Proyecto SASS/
 │   ├── themes/
 │   │   └── _theme.scss
 │   ├── vendors/
-│   │   └── _bootstrap.scss
 │   └── style.scss
 ├── destinations.html
 ├── contact.html
